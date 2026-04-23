@@ -9,7 +9,7 @@ A collection of Java projects demonstrating problem-solving, clean code, and sof
 ### 🧮 Calculator CLI
 A simple command-line calculator with input validation and error handling.
 
-🔗 [View Project](./calculator-cli)
+🔗 [CALCULATOR-CLI](./calculator-cli)
 
 ---
 
