@@ -1,31 +1,108 @@
-🧮 Java Calculator
+# 🧮 Java Calculator  
 
-A simple, robust command-line calculator built with Java.
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-🚀 Features
-Basic Arithmetic: Perform addition, subtraction, multiplication, and division
-Input Validation: Handles invalid numbers and operators gracefully
-Safety Checks: Prevents errors such as division by zero
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-🛠️ Installation & Running
+![Java](https://img.shields.io/badge/Java-8%2B-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![CLI](https://img.shields.io/badge/Interface-Command%20Line-black)
 
-Prerequisites
-Java Development Kit (JDK 8 or higher)
+A simple and robust **command-line calculator** built using Java.  
+This project demonstrates clean logic, input validation, and proper error handling.
 
-Steps
-->Download Calculator.java
-->Open your terminal and navigate to the file location
-->Compile the program
-->javac Calculator.java
-->Run the program
-->java Calculator
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-📖 How to Use
-Launch the program
-Enter your first number and press Enter
-Enter an operator (+, -, *, /) and press Enter
-Enter your second number and press Enter
-View the calculated result on the screen
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-📄 License
-This project is open-source and available under the MIT License.
+---
+
+## 🚀 Features  
+
+- Perform basic arithmetic operations (+, -, *, /)  
+- Clean and user-friendly CLI interaction  
+- Handles invalid inputs gracefully  
+- Prevents division by zero  
+- Lightweight and fast  
+
+---
+
+## 🛠️ Tech Stack  
+
+- **Language:** Java  
+- **Interface:** Command Line (CLI)  
+
+**Concepts Used:**  
+- Conditionals (if-else / switch)  
+- Exception Handling  
+- User Input (Scanner)  
+
+---
+
+## 📂 Project Structure  
+Java-Projects/
+│
+├── src/
+│ └── Calculator.java
+│
+├── .gitignore
+├── README.md
+└── CalculatorApp.iml
+
+
+---
+
+## ⚙️ Installation & Running  
+
+### Prerequisites  
+- JDK 8 or higher installed  
+
+### Steps  
+
+```bash
+# Navigate to project folder
+cd Java-Projects
+
+# Compile
+javac src/Calculator.java
+
+# Run
+java -cp src Calculator
+
+```
+---
+## 📖 Usage
+- Run the program
+- Enter the first number
+- Enter an operator (+, -, *, /)
+- Enter the second number
+- View the result
+
+---
+
+## 💡 Example
+```bash
+
+Enter first number: 12
+
+Enter operator: *
+
+Enter second number: 4
+
+Result: 48
+```
+---
+
+## 🎯 Learning Outcome
+**This project helped in understanding:**
+- Java fundamentals
+- Writing clean and structured code
+- Handling runtime errors
+- Building CLI-based applications
+---
+
+## 🚧 Future Improvements
+- Add advanced operations (power, square root)
+- Build GUI version (JavaFX / Swing)
+- Add unit testing (JUnit)
+- Convert to executable JAR
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+
+  
