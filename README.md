@@ -1,34 +1,31 @@
-Java Calculator\
+🧮 Java Calculator
+
 A simple, robust command-line calculator built with Java.
-
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🚀 Features
-\
-Basic Arithmetic: Addition, subtraction, multiplication, and division.\
-Input Validation: Handles invalid numbers and symbols.\
-Safety: Includes checks to prevent division by zero.\
+Basic Arithmetic: Perform addition, subtraction, multiplication, and division
+Input Validation: Handles invalid numbers and operators gracefully
+Safety Checks: Prevents errors such as division by zero
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+🛠️ Installation & Running
 
-🛠️ Installation & Running\
-Ensure JDK is installed (Version 8 or higher).\
-Download Calculator.java.\
-Open your terminal and navigate to the file location.\
+Prerequisites
+Java Development Kit (JDK 8 or higher)
 
-Compile the program:
-\
-bash\
-javac Calculator.java\
-Use code with caution.\
-Run the program:\
-bash\
-java Calculator\
-Use code with caution.
-
-📖 How to Use\
-Launch the program.\
-Type your first number and press Enter.\
-Type the operator (+, -, *, /) and press Enter.\
-Type your second number and press Enter.\
-View the calculated result on your screen.
-
-📄 License\
+Steps
+->Download Calculator.java
+->Open your terminal and navigate to the file location
+->Compile the program
+->javac Calculator.java
+->Run the program
+->java Calculator
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+📖 How to Use
+Launch the program
+Enter your first number and press Enter
+Enter an operator (+, -, *, /) and press Enter
+Enter your second number and press Enter
+View the calculated result on the screen
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+📄 License
 This project is open-source and available under the MIT License.
