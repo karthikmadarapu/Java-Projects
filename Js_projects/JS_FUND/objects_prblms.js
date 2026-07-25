@@ -341,3 +341,30 @@ function ablakadbra(array){
 }
 
 console.log(ablakadbra(numsArray));
+
+
+// Small objects practice 
+
+function myObjkiller(array){
+    const finalOutput = {};
+
+    let max_count = 0 ;
+    let mostFreq = null ;
+
+    for(const rep of array){
+        finalOutput[rep] = (finalOutput[rep] || 0) +1;
+
+
+    if(finalOutput[rep] > max_count){
+        max_count = finalOutput[rep];
+        mostFreq = rep;
+    }
+}
+
+    return mostFreq;
+
+
+
+}
+
+console.log(myObjkiller(numsArray));
