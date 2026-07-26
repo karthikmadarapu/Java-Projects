@@ -368,3 +368,26 @@ function myObjkiller(array){
 }
 
 console.log(myObjkiller(numsArray));
+
+
+
+// convert  array to string 
+
+function arrToString(details){
+
+    const resultObj = {};
+
+    for(const info of details ){
+        const key = info[0];
+        const val = info[1];
+
+        if(val !== null && val != undefined){
+        resultObj[key] = val;
+
+        }
+      
+    }
+    return resultObj;
+}
+
+console.log(arrToString(myDetails));
