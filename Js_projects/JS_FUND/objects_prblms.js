@@ -391,3 +391,23 @@ function arrToString(details){
 }
 
 console.log(arrToString(myDetails));
+
+
+// object reverser
+function objRev(obj){
+    const myRes = {};
+    for(const each in obj){
+        const key = each;
+        const val = obj[each];
+    
+      myRes[val]  = key;
+    }
+    return myRes;
+}
+
+const objectEx = {
+ a:1,
+ b:2,
+ c:3
+};
+console.log(objRev(objectEx));
