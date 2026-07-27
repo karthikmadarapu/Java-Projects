@@ -411,3 +411,25 @@ const objectEx = {
  c:3
 };
 console.log(objRev(objectEx));
+
+
+
+// most freq finder practice agian 
+
+function mostFreqFinder(array){
+    const  result = {};
+
+    let max_count = 0;
+    let champ = null;
+    for(const eachItr of array){
+        result[eachItr] = (result[eachItr] || 0) +1;
+
+        if(result[eachItr] > max_count){
+            max_count = result[eachItr];
+            champ = eachItr;
+        }
+    }
+    return champ;
+}
+
+console.log(mostFreqFinder(numsArray));
