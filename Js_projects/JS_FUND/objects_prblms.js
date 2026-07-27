@@ -433,3 +433,49 @@ function mostFreqFinder(array){
 }
 
 console.log(mostFreqFinder(numsArray));
+
+// grouping people by age
+
+function groupPpl(people){
+
+    const resultObj = {};
+    for(const eachPerson of people ){
+        
+        const name = eachPerson.name;
+        const age = eachPerson.age;
+        
+        if(!resultObj[age]){
+            resultObj[age] = [];
+        }
+
+        resultObj[age].push(name);
+    }
+   
+
+
+
+    return resultObj;
+
+}
+
+console.log(groupPpl(inputPeople));
+
+
+
+function groupByAge(people){
+    return people.reduce((acc, person) => {
+
+        if(!acc[person.age]){
+            acc[person.age] = [];
+        }
+
+        acc[person.age].push(person.name);
+
+        return acc;
+
+    }, {});
+
+}
+
+console.log(groupByAge(inputPeople));
+
