@@ -479,3 +479,31 @@ function groupByAge(people){
 
 console.log(groupByAge(inputPeople));
 
+
+// find the person with highest sal 
+function findHighestSal(empData){
+   
+    
+    let highestEmp = null;
+    
+    for(const eachEmp of empData){
+        
+        const sal = eachEmp.salary;
+        
+        if (highestEmp === null || sal > highestEmp.salary ){
+        
+            highestEmp = eachEmp;
+        }
+
+
+    }
+    return highestEmp;
+}
+
+const peopleSalaries = [
+ {name:"John",salary:5000},
+ {name:"Mike",salary:8000},
+ {name:"Anna",salary:6000}
+];
+console.log(findHighestSal(peopleSalaries));
+
