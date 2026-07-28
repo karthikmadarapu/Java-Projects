@@ -507,3 +507,55 @@ const peopleSalaries = [
 ];
 console.log(findHighestSal(peopleSalaries));
 
+
+// merging objects 
+
+function mergeObj(array){
+    const finalRes = {};
+
+
+    for(const eachObj of array){
+        
+        for(const k in eachObj){
+             
+            const v = eachObj[k];
+            
+            if(v !== undefined && v !== null){
+                finalRes [k] = v;
+            }
+        }
+        
+    }
+    return finalRes;
+}
+
+const arrayOfObj = [
+ {a:1},
+ {b:2},
+ {c:3},
+ {d:4}
+];
+
+console.log(mergeObj(arrayOfObj));
+
+// objects prctice 
+
+function mergeObjects(arrs){
+
+    const finalResult = {};
+    
+    for(const myArr of arrs){
+
+        for(const eachVal in myArr){
+            const val = myArr[eachVal];
+
+            if(val !== undefined && val !== null){
+                finalResult[eachVal] = val;
+            }
+        }
+    }
+
+    return finalResult;
+}
+
+console.log(mergeObjects(arrayOfObj));
