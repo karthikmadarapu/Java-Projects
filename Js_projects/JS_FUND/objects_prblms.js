@@ -580,3 +580,27 @@ console.log(groupByAges(inputPeople));
 
 // counting acc to departments 
 
+function countTheDept(employees){
+
+    const groupingDept = {};
+
+    for(const eachEmp of employees){
+       const currDept = eachEmp.dept;
+
+       if(groupingDept[currDept] === undefined){
+        groupingDept[currDept] = 0;
+       }
+       groupingDept[currDept]++;
+    }
+    return groupingDept;
+}
+
+const arr_employees = [
+ {name:"John",dept:"IT"},
+ {name:"Anna",dept:"HR"},
+ {name:"Mike",dept:"IT"},
+ {name:"Sarah",dept:"Sales"},
+ {name:"David",dept:"IT"}
+];
+
+console.log(countTheDept(arr_employees));
