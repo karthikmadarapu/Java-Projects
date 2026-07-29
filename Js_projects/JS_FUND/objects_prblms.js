@@ -559,3 +559,24 @@ function mergeObjects(arrs){
 }
 
 console.log(mergeObjects(arrayOfObj));
+// returning / grouping by age 
+function groupByAges(array){
+    const  finalRep = {};
+    for(const eacItr of array){
+        const name = eacItr.name;
+        const age = eacItr.age;
+
+        if(!finalRep[age]){
+            finalRep[age] = [];
+        }
+        finalRep[age].push(name);
+     }
+     
+     return finalRep;
+
+}
+
+console.log(groupByAges(inputPeople));
+
+// counting acc to departments 
+
