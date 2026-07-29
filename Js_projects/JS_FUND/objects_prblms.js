@@ -604,3 +604,32 @@ const arr_employees = [
 ];
 
 console.log(countTheDept(arr_employees));
+
+
+// grouping products by Category 
+
+function grProductsByCat(products){
+    const finalArr = {};
+    for(const eachProduct of products ){
+        const category = eachProduct.category;
+        const name = eachProduct.name;
+
+        if(!finalArr[category]){
+            finalArr[category] = [];
+        }
+
+        finalArr[category].push(name);
+
+    }
+
+    return finalArr;
+
+}
+
+const products_array = [
+ {name:"TV",category:"Electronics"},
+ {name:"Laptop",category:"Electronics"},
+ {name:"Shirt",category:"Clothing"}
+];
+
+console.log(grProductsByCat(products_array));
