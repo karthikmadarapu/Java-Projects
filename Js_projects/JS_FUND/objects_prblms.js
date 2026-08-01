@@ -655,3 +655,24 @@ function mergeCat(param){
 }
 
 console.log(mergeCat(products_array));
+
+
+// Calculate Total Wages of Employees
+
+function totalWages(array){
+    let myResWage = 0;
+    
+    for(const eachEmp of array){
+        const sal = eachEmp.salary;
+        
+        myResWage += sal;
+
+    }
+
+    return myResWage;
+
+
+}
+
+// const empData
+console.log(totalWages(employees));
