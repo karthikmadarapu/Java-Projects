@@ -633,3 +633,25 @@ const products_array = [
 ];
 
 console.log(grProductsByCat(products_array));
+
+
+
+function mergeCat(param){
+    const finalRes  = {};
+
+    for(const eachItr of param){
+             
+        const cat = eachItr.category;
+        const name = eachItr.name;
+         
+        if(!finalRes[cat]){
+            finalRes[cat] = [];
+        }
+         
+          finalRes[cat].push(name);
+    }
+
+    return finalRes;
+}
+
+console.log(mergeCat(products_array));
