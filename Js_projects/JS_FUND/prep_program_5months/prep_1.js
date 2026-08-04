@@ -21,3 +21,11 @@ const isBigger = (a, b) =>  a > b ;
 
 
 console.log(isBigger(50000, 10));
+
+const gettingAnAbsoluteVal = (num) => {
+    if(num < 0 )  return num * -1 ;
+    return num;
+};
+
+console.log(gettingAnAbsoluteVal(1));
+
