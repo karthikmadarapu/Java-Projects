@@ -685,5 +685,18 @@ function objToBig(param){
     const finalRes = {};
     
 
-    for(const eachItr of param )
+    for(const eachItr of param){
+      
+        for(const k in eachItr){
+            const v = eachItr[k];
+
+            if(v !== undefined && v !== null){
+                finalRes[k] = v;
+            }
+           
+        }
+     
+    }
+    return finalRes;
 }
+console.log(objToBig(arrayOfObj));
