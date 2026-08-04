@@ -17,3 +17,7 @@ const sayHello = () => "Hello World!" ;
 console.log(sayHello());
 
 
+const isBigger = (a, b) =>  a > b ;
+
+
+console.log(isBigger(50000, 10));
