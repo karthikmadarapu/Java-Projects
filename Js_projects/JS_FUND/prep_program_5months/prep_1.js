@@ -29,3 +29,8 @@ const gettingAnAbsoluteVal = (num) => {
 
 console.log(gettingAnAbsoluteVal(1));
 
+
+const makeUsername = (username) =>  ({name : username, role : "user"}) ;
+
+console.log(makeUsername("mandy"));
+
