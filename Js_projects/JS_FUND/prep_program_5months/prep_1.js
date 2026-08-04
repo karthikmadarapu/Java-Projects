@@ -34,3 +34,14 @@ const makeUsername = (username) =>  ({name : username, role : "user"}) ;
 
 console.log(makeUsername("mandy"));
 
+
+// returning High earning employees
+
+const getHighEarners = employees => employees.filter(emp => emp.salary > 5000);
+
+const employees = [
+ {name:"John",salary:5000},
+ {name:"Mike",salary:8000},
+ {name:"Anna",salary:6000}
+];
+console.log(getHighEarners(employees));
