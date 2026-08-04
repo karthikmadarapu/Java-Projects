@@ -676,3 +676,14 @@ function totalWages(array){
 
 // const empData
 console.log(totalWages(employees));
+
+
+
+// Object to big object converter 
+
+function objToBig(param){
+    const finalRes = {};
+    
+
+    for(const eachItr of param )
+}
