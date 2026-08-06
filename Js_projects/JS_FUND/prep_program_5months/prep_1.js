@@ -45,3 +45,10 @@ const employees = [
  {name:"Anna",salary:6000}
 ];
 console.log(getHighEarners(employees));
+
+// name greeter program
+
+const myname = (name) => `Hello ${name}!`;
+
+
+console.log(myname("noman"));
