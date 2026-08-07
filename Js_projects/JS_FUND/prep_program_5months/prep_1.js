@@ -52,3 +52,16 @@ const myname = (name) => `Hello ${name}!`;
 
 
 console.log(myname("noman"));
+
+
+
+// arrow fucntion 
+const fruits = ["apple", "banana", "orange"];
+
+fruits.forEach(fruit => {
+    console.log(fruit);
+});
+
+
+
+
