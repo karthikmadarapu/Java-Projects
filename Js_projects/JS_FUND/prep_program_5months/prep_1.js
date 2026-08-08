@@ -77,5 +77,9 @@ const myProgram = (param, num) => {
 console.log(myProgram(1,9));
 
 
+// multiplication function 
 
+const multiply = (a, b) => a * b;
+console.log(multiply(7,9));
 
+// 
