@@ -62,6 +62,20 @@ fruits.forEach(fruit => {
     console.log(fruit);
 });
 
+// arrow functions prep 
+
+
+const myProgram = (param, num) => {
+    if(param !== num){
+        return "num is not same!"; 
+    }
+    else {
+        return "both nums are same"
+    }
+}
+
+console.log(myProgram(1,9));
+
 
 
 
