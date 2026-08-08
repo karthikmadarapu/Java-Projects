@@ -82,4 +82,19 @@ console.log(myProgram(1,9));
 const multiply = (a, b) => a * b;
 console.log(multiply(7,9));
 
-// 
+// discount  fucntion 
+
+const giveMeDiscount = (actualPrice, disc) => {
+    
+
+    const discGiven = actualPrice * disc;
+    const finalDiscPrice = actualPrice - discGiven;
+
+    return finalDiscPrice;
+
+  
+}
+
+console.log(giveMeDiscount(12.95, 0.10));
+
+
