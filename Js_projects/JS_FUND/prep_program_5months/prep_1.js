@@ -102,3 +102,13 @@ console.log(giveMeDiscount(12.95, 0.10));
 const makeUserName = name => ({username : name});
 
 console.log(makeUserName("karty"));
+
+
+// array  callback functions 
+
+const numbers = [1, 2, 3, 4, 5, 6];
+
+const doubleTheNumbers = numbers.map(nums => nums * 2);
+
+console.log(doubleTheNumbers);
+
