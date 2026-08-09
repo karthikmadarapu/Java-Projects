@@ -112,3 +112,8 @@ const doubleTheNumbers = numbers.map(nums => nums * 2);
 
 console.log(doubleTheNumbers);
 
+// keeping even nums only function 
+
+const evenOnly = numbers.filter(num => num % 2 === 0);
+
+console.log(evenOnly);
