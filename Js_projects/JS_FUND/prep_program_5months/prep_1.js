@@ -97,4 +97,8 @@ const giveMeDiscount = (actualPrice, disc) => {
 
 console.log(giveMeDiscount(12.95, 0.10));
 
+// making username 
 
+const makeUserName = name => ({username : name});
+
+console.log(makeUserName("karty"));
