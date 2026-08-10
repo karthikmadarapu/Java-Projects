@@ -117,3 +117,18 @@ console.log(doubleTheNumbers);
 const evenOnly = numbers.filter(num => num % 2 === 0);
 
 console.log(evenOnly);
+
+
+
+// name  checker 
+
+const nameCheck = (param) => {
+     let string = "name";
+    if(param !== string){
+        return `Not a string !`
+    }
+    return `Punch accepted!`
+}
+console.log(nameCheck(7));
+
+// idk what the fk i did ?
