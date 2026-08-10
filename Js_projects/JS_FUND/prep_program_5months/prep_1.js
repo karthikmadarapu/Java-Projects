@@ -131,4 +131,3 @@ const nameCheck = (param) => {
 }
 console.log(nameCheck(7));
 
-// idk what the fk i did ?
