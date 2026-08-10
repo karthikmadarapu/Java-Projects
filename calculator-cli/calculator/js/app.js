@@ -7,6 +7,7 @@ import { getCurrentValue,
 } from "./state.js";
 
 import { calculate } from "./operations.js";
+import "./ui.js";
 
 
 

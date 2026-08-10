@@ -36,9 +36,3 @@ export {
     setOperator
 };
 
-
-// setCurrentValue(7);
-
-
-
-// console.log(getCurrentValue());
