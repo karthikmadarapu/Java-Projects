@@ -11,10 +11,11 @@ import "./ui.js";
 
 
 
-console.log(calculate(7, "+", 3));
-console.log(calculate(7, "-", 3));
-console.log(calculate(7, "*", 3));
-console.log(calculate(7, "/", 0));
+
+// console.log(calculate(7, "+", 3));
+// console.log(calculate(7, "-", 3));
+// console.log(calculate(7, "*", 3));
+// console.log(calculate(7, "/", 0));
 
 // // Initial State
 // console.log("Initial State : ");

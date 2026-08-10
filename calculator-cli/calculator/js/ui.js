@@ -59,3 +59,4 @@ equalsButton.addEventListener("click", function(){
     display.textContent = getCurrentValue();
 
 });
+
