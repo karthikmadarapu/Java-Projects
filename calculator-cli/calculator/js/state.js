@@ -7,7 +7,7 @@ function getCurrentValue(){
 }
 
 function getPreviousValue(){
-    return previousValueValue;
+    return previousValue;
 }
 
 function getOperator(){
