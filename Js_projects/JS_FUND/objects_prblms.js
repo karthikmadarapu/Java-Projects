@@ -718,3 +718,6 @@ function sayHi(parameter, numOf){
 console.log(sayHi("hi",5 ));
 
 
+const repeatWord = (word, times) => (word + "\n").repeat(times).trim();
+
+console.log(repeatWord("hi", 10));
