@@ -700,3 +700,21 @@ function objToBig(param){
     return finalRes;
 }
 console.log(objToBig(arrayOfObj));
+
+
+function sayHi(parameter, numOf){
+
+    let result = [];
+
+    for(let i= 0; i < numOf; i++){
+      result.push(parameter);
+      
+    }
+
+    return result;
+
+
+}
+console.log(sayHi("hi",5 ));
+
+
