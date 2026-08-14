@@ -1,5 +1,6 @@
 // group the person acc to age group
 
+
 function groupingByAge(people){
 
     const grouped = {};
@@ -721,3 +722,47 @@ console.log(sayHi("hi",5 ));
 const repeatWord = (word, times) => (word + "\n").repeat(times).trim();
 
 console.log(repeatWord("hi", 10));
+
+// function for filtering any object with prices with specific nums
+// key would be the product itself and value would be the price 
+
+// 10 or under dollars
+function filterOutThePrices(obj){
+
+    const finalResult = {};
+
+    for(const product in obj ){
+        
+        const price = obj[product];
+
+        if(price <= 10){
+            finalResult[product] = price;
+        }
+    
+       
+    }
+    return finalResult;
+
+}
+
+
+const myProduct = {
+  "Sticker Pack": 2.50,
+  "Ballpoint Pen": 4.99,
+  "Notebook": 12.00,
+  "Water Bottle": 24.95,
+  "Wireless Mouse": 35.00,
+  "Coffee Mug": 42.50,
+  "Desk Mat": 58.00,
+  "Backpack": 75.99,
+  "Mechanical Keyboard": 89.99,
+  "Wireless Earbuds": 99.99
+};
+
+console.log(filterOutThePrices(myProduct));
+
+
+
+
+
+
