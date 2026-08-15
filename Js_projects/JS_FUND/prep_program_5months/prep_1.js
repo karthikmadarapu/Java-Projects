@@ -142,3 +142,14 @@ const addingStringToPrices = prices.map(each =>{
 })
 
 console.log(addingStringToPrices);
+
+
+// array fucntions filter 
+
+const nums = [1, 4, 7, 10, 15, 18];
+
+const evenNumsOnly = nums.filter(each => each % 2 === 0);
+
+console.log(evenNumsOnly);
+
+
