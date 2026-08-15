@@ -131,3 +131,14 @@ const nameCheck = (param) => {
 }
 console.log(nameCheck(7));
 
+
+
+//Array functions warm ups 
+
+const prices = [10, 20, 30];
+
+const addingStringToPrices = prices.map(each =>{
+    return `$${each}`;
+})
+
+console.log(addingStringToPrices);
