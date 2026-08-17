@@ -153,3 +153,26 @@ const evenNumsOnly = nums.filter(each => each % 2 === 0);
 console.log(evenNumsOnly);
 
 
+function trappingRWater(arr){
+    
+    let leftPointer = arr[0], rightPointer = arr.length - 1;
+    let leftmaxx = 0, rightmaxx = 0, waterUnits = 0;
+
+    while(leftPointer < rightPointer){
+        
+        if(arr[leftPointer] < arr[rightPointer]){
+            arr[leftPointer] >= leftmaxx ? (leftmaxx = arr[leftPointer]) :(waterUnits += leftmaxx - arr[leftPointer]);
+            leftPointer++ ;
+        }
+        else{
+            arr[rightPointer] >= rightmaxx ? (rightmaxx = arr[rightPointer]) :(waterUnits += rightmaxx - arr[rightPointer]);
+            rightPointer-- ; 
+        }
+    }
+    return waterUnits;
+    
+}
+
+const myArr =  [0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1];
+console.log(trappingRWater(myArr));
+

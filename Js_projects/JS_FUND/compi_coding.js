@@ -87,4 +87,7 @@ function trappingWater(myArr){
  console.log(trappingWater(exArray));
 
 
+ 
+
+
 
