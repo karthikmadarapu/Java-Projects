@@ -22,3 +22,12 @@ const addingSum = itemPrices.reduce((total, currentItem)=> {
 }, 0);
 
 console.log(addingSum);
+// Data Manipulation 
+
+const arrayOfNames = [{first: "John", last: "Doe"}, {first: "Anna", last: "Smith"}];
+
+const fullNames = arrayOfNames.map(eachUser => `${eachUser.first}${eachUser.last}`);
+
+console.log(fullNames);
+
+// 
