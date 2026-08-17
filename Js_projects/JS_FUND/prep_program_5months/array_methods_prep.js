@@ -30,4 +30,9 @@ const fullNames = arrayOfNames.map(eachUser => `${eachUser.first}${eachUser.last
 
 console.log(fullNames);
 
-// 
+// filter medium version problems 
+
+const products  = [{name: "Laptop", stock: 5}, {name: "Shirt", stock: 0}, {name: "Book", stock: 12}];
+
+const filterProducts = products.filter(each =>  each.stock > 0);
+console.log(filterProducts);
