@@ -12,3 +12,13 @@ const evenNum = filterNums.filter(each => each % 2 === 0);
 
 console.log(evenNum);
 
+// array reduce method 
+
+const itemPrices = [5.99, 10.00, 2.50];
+
+const addingSum = itemPrices.reduce((total, currentItem)=> {
+    return total + currentItem;
+
+}, 0);
+
+console.log(addingSum);
