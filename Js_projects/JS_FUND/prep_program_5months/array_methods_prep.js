@@ -36,3 +36,23 @@ const products  = [{name: "Laptop", stock: 5}, {name: "Shirt", stock: 0}, {name:
 
 const filterProducts = products.filter(each =>  each.stock > 0);
 console.log(filterProducts);
+
+// medium hard reduce method
+
+const  votes =  ["yes", "no", "yes", "yes", "no"];
+
+const groupingVotes = votes.reduce((tally, vote) =>{
+    if(!tally[vote]){
+        tally[vote] = 0;
+    }
+
+     tally[vote]++;
+
+     return tally;
+
+   
+    
+
+},{});
+
+console.log(groupingVotes);
