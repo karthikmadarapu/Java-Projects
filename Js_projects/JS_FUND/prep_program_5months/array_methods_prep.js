@@ -56,3 +56,15 @@ const groupingVotes = votes.reduce((tally, vote) =>{
 },{});
 
 console.log(groupingVotes);
+
+
+const myArr = [5.99, 10.00, 2.50];
+
+
+const  totalAdd = myArr.reduce((acc, each) =>{
+
+return acc + each;
+
+},0);
+
+console.log(totalAdd);
