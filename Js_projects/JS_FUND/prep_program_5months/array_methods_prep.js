@@ -87,3 +87,8 @@ const groupBikes = bikes.reduce((total, eachBike)=>{
 
 console.log(groupBikes);
 
+const students = [{name: "Alex", score: 85}, {name: "Blake", score: 42}, {name: "Charlie", score: 91}];
+
+const passingStudentsNames = students.filter(student => student.score >= 50).map(student => student.name);
+
+console.log(passingStudentsNames);
