@@ -68,3 +68,22 @@ return acc + each;
 },0);
 
 console.log(totalAdd);
+
+
+// reduce array method 
+const bikes = ["s1000rr", "zx10r", "rc390", "panigale", "panigale"];
+
+const groupBikes = bikes.reduce((total, eachBike)=>{
+
+    if(!total[eachBike]){
+        total[eachBike] = 0;
+      
+    }
+
+     total[eachBike]++;
+    return total;
+
+},{});
+
+console.log(groupBikes);
+
