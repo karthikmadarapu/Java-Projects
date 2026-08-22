@@ -101,4 +101,23 @@ const filtering =  arrayOfavailStock.filter(each => each.stock > 0);
 
 console.log(filtering);
 
-// given an j
+// given an array of inventory items 
+
+const inventory_products = [{cat: "fruit", name: "apple"}, {cat: "meat", name: "beef"}, {cat: "fruit", name: "banana"}];
+
+const grouping_cat = inventory_products.reduce((acc, each) =>{
+
+    const current_cat = each.cat;
+
+    if(!acc[current_cat]) acc[current_cat] =[];
+
+    acc[current_cat].push(each.name);
+
+
+
+return acc;
+
+
+},{})
+
+console.log(grouping_cat);
