@@ -92,3 +92,13 @@ const students = [{name: "Alex", score: 85}, {name: "Blake", score: 42}, {name: 
 const passingStudentsNames = students.filter(student => student.score >= 50).map(student => student.name);
 
 console.log(passingStudentsNames);
+
+
+const arrayOfavailStock = [{name: "Laptop", stock: 5}, {name: "Shirt", stock: 0}, {name: "Book", stock: 12}];
+
+const filtering =  arrayOfavailStock.filter(each => each.stock > 0);
+
+
+console.log(filtering);
+
+// given an j
