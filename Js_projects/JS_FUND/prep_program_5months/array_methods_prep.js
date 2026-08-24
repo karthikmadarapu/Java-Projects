@@ -121,3 +121,30 @@ return acc;
 },{})
 
 console.log(grouping_cat);
+
+
+// array methods when ?
+
+function customFilter(array, callback){
+
+    return array.reduce((acc, each) =>{
+        
+        if(callback(each)){
+            acc.push(each);
+
+        }
+
+        return acc;
+    
+
+    },[]);
+
+}
+
+
+const isEven = (param) => param % 2 === 0;
+
+const myempty_arr = [1,2,3,3,4,2,8];
+
+console.log(customFilter(myempty_arr,isEven));
+
