@@ -245,3 +245,19 @@ const listedMenuItems = menuItems.map(each => `<li> ${each} </li>`);
 
 console.log(listedMenuItems);
 
+
+// scorecard Maker 
+
+const players = ["Alice", "Bob", "Charlie"];
+
+const scorecard = players.map((each,index) => ({
+
+    Name : each,
+    Score : 0, 
+    Rank : index + 1
+
+
+
+}));
+
+console.log(scorecard);
