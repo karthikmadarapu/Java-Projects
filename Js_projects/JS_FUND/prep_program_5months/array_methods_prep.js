@@ -228,3 +228,12 @@ const ids_pluck = products_api.map(eachItr => eachItr.id);
 console.log(ids_pluck);
 
 
+// Inflation Adjuster 
+
+const prices = [100, 250, 500, 1000];
+
+const inflatedPrices = prices.map(each => each * 1.1);
+
+console.log(inflatedPrices);
+
+
