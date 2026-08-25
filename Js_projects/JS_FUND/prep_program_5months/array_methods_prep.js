@@ -148,3 +148,17 @@ const myempty_arr = [1,2,3,3,4,2,8];
 
 console.log(customFilter(myempty_arr,isEven));
 
+
+const scores = [45, 89, 72, 95, 60, 88];
+
+const findTheHighest = scores.reduce((acc, currentNum) =>{
+
+if(acc <= currentNum) return currentNum;
+
+return acc;
+
+});
+
+console.log(findTheHighest);
+
+
