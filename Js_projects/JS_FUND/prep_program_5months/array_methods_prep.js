@@ -237,3 +237,11 @@ const inflatedPrices = prices.map(each => each * 1.1);
 console.log(inflatedPrices);
 
 
+// The HTML list builder 
+
+const menuItems = ["home", "about", "contact"];
+
+const listedMenuItems = menuItems.map(each => `<li> ${each} </li>`);
+
+console.log(listedMenuItems);
+
