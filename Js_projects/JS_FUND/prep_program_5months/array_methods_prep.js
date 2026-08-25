@@ -186,4 +186,18 @@ console.log(newArr);
 
 
 
-// 
+// Using dataBases and manipulating
+const apiUsers = [
+  { id: 101, first_name: "John", last_name: "Doe", role: "admin" },
+  { id: 102, first_name: "Jane", last_name: "Smith", role: "user" }
+];
+
+const organisingData = apiUsers.map(eachItr => ({
+  userId : eachItr.id,
+  fullName : `${eachItr.first_name} ${eachItr.last_name}`,
+  isAdmin : eachItr.role === "admin"
+
+
+}));
+
+console.log(organisingData);
