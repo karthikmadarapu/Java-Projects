@@ -213,3 +213,18 @@ const cartItems = [
 const ids = cartItems.map(eachProduct => eachProduct.productId);
 
 console.log(ids);
+
+
+// id plucker 
+
+const products_api = [
+  { id: "p10", name: "Laptop", price: 999 },
+  { id: "p20", name: "Mouse", price: 25 },
+  { id: "p30", name: "Keyboard", price: 45 }
+];
+
+
+const ids_pluck = products_api.map(eachItr => eachItr.id);
+console.log(ids_pluck);
+
+
