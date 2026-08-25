@@ -161,4 +161,29 @@ return acc;
 
 console.log(findTheHighest);
 
+const nestedArr = [[1,2], [3,4],[5,6]];
 
+const flatTheArr = nestedArr.reduce((acc, current) =>{
+
+   return acc.concat(current);
+
+    
+
+}, []);
+
+console.log(flatTheArr);
+
+
+// IMP 6 BEST ARRAY METHODS ONLY 
+
+// .map() Method 
+
+const cars = ["toyota", "subaru", "BMW", "MERC"];
+
+const newArr = cars.map(each => each.toUpperCase());
+
+console.log(newArr);
+
+
+
+// 
