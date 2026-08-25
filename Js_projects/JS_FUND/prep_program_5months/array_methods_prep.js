@@ -201,3 +201,15 @@ const organisingData = apiUsers.map(eachItr => ({
 }));
 
 console.log(organisingData);
+
+
+// extracting just the ids
+
+const cartItems = [
+  { productId: "p1", quantity: 2, price: 49.99 },
+  { productId: "p5", quantity: 1, price: 19.99 }
+];
+
+const ids = cartItems.map(eachProduct => eachProduct.productId);
+
+console.log(ids);
