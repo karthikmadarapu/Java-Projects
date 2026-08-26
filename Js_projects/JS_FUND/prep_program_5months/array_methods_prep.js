@@ -261,3 +261,12 @@ const scorecard = players.map((each,index) => ({
 }));
 
 console.log(scorecard);
+
+// filter method 
+
+const engines = ["v2", "v4", "v6", "v8", "v12"];
+
+const highValEngines =  engines.filter(each => each >= "v4");
+
+console.log(highValEngines);
+
