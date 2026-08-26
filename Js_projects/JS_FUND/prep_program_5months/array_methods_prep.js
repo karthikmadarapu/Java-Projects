@@ -270,3 +270,17 @@ const highValEngines =  engines.filter(each => each >= "v4");
 
 console.log(highValEngines);
 
+// liquor store  checkout system 
+
+const users = [
+  { name: "John", age: 25 },
+  { name: "Jane", age: 17 },
+  { name: "Bob", age: 16 },
+  { name: "Alice", age: 30 }
+];
+
+const filtered_Users = users.filter(eachItr => eachItr.age >= 19);
+
+console.log(filtered_Users);
+
+// 
