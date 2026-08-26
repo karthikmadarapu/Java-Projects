@@ -320,5 +320,12 @@ const filteredInventory  = inventory.filter((each) => {
 
 console.log(filteredInventory);
 
+//  "Search Bar Filter"
 
+const articles = ["New tech trends", "Cooking 101", "FinTech Explained", "History of Art"];
+const keyword = "tech";
 
+const newArticles = articles.filter((each) => {
+each.toLowerCase().includes(keyword.toLowerCase());
+});
+console.log(newArticles);
