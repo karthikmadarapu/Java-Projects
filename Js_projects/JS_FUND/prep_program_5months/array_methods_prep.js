@@ -303,4 +303,22 @@ console.log(oddPosition);
 
 
 
+// THE Stock Broker DashBoard 
+
+const inventory = [
+  { sku: "A1", stock: 0, status: "active" },
+  { sku: "B2", stock: 12, status: "active" },
+  { sku: "C3", stock: 4, status: "active" },
+  { sku: "D4", stock: 2, status: "discontinued" }
+];
+
+
+const filteredInventory  = inventory.filter((each) => {
+    if((each.stock <= 5 && each.stock >0) && each.status === "active" ) return each;
+
+});
+
+console.log(filteredInventory);
+
+
 
