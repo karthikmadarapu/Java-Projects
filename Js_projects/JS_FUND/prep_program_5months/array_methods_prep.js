@@ -283,4 +283,15 @@ const filtered_Users = users.filter(eachItr => eachItr.age >= 19);
 
 console.log(filtered_Users);
 
-// 
+//bot spamming --- comment section
+
+const comments = ["Love this!", "", "Very helpful article", " ", "Awesome post!"];
+
+const filterComments = comments.filter(each =>{
+    if(each !== "" && each !== " " ) return each;
+});
+
+console.log(filterComments);
+
+
+
