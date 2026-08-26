@@ -294,4 +294,13 @@ const filterComments = comments.filter(each =>{
 console.log(filterComments);
 
 
+// The "Odd Position Evictor"
+const  UI_Cards = ["Card A", "Card B", "Card C", "Card D", "Card E"];
+
+const oddPosition = UI_Cards.filter((each, index )=> index % 2 === 0);
+
+console.log(oddPosition);
+
+
+
 
