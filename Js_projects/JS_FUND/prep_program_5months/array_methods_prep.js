@@ -353,3 +353,22 @@ const sessionIds = [102, 305, 102, 404, 305, 500];
 const originalSessionIds = sessionIds.filter((each, index, arr) => arr.indexOf(each) === index);
 
 console.log(originalSessionIds);
+
+
+//  The "E-Commerce VIP Checker" (The Ultimate Test)
+
+const shoppers = [
+  { name: "Zack", tier: "premium", purchases: [50, 30, 150] }, // Total: 230
+  { name: "Kelly", tier: "standard", purchases: [300] },       // Total: 300
+  { name: "Slater", tier: "premium", purchases: [20, 40] },     // Total: 60
+  { name: "Jessie", tier: "premium", purchases: [100, 120] }    // Total: 220
+];
+
+const premiumShoppers = shoppers.filter((each) => {
+
+    const  totalSpent = each.purchases.reduce((sum, current) =>  sum + current, 0);
+    if(totalSpent>= 200 && each.tier === "premium") return each;
+});
+
+console.log(premiumShoppers);
+
