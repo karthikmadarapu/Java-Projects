@@ -344,3 +344,12 @@ const filtered_profiles = profiles.filter((each) => {
 
 });
 console.log(filtered_profiles);
+
+
+// BOUNCER DE DUPLICATOR
+
+const sessionIds = [102, 305, 102, 404, 305, 500];
+
+const originalSessionIds = sessionIds.filter((each, index, arr) => arr.indexOf(each) === index);
+
+console.log(originalSessionIds);
