@@ -329,3 +329,18 @@ const newArticles = articles.filter((each) => {
 each.toLowerCase().includes(keyword.toLowerCase());
 });
 console.log(newArticles);
+
+// The "Missing Data Purge"
+
+const profiles = [
+  { user: "dev_dan", email: "dan@test.com" },
+  { user: "ghost_user" }, 
+  { user: "bot_99", email: null },
+  { user: "admin_ace", email: "ace@test.com" }
+];
+
+const filtered_profiles = profiles.filter((each) => {
+    if(each.email !== null && each.email !== undefined) return each;
+
+});
+console.log(filtered_profiles);
