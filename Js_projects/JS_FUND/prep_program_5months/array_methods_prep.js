@@ -620,8 +620,19 @@ const product = {
 console.log(product.displayPrice()); 
 // Expected Output: "The Mechanical Keyboard costs $90"
 
+// using Bind keyword to user function and the variable
+function describeCar(){
+  console.log( `i'm driving a ${this.color} ${this.model}`);
+}
 
+const carDetails = {
+  model: "BMW M5 comp",
+  color: "matte black"
+}
 
+const boundingCar = describeCar.bind(carDetails);
+
+boundingCar();
 
 
 
