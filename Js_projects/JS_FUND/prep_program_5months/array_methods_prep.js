@@ -471,6 +471,15 @@ const fruits = [...goodfruits , ...okayishFruits , "grapes" ];
 
 console.log(fruits);
 
+// SPREAD OPERATOR CODING QUIZ 
+const rockSongs = ["In the End", "Numb"];
+const popSongs = ["Bad Romance", "Blank Space"];
+
+
+const masterPlaylist  = [...rockSongs, ...popSongs];
+console.log(masterPlaylist);
+
+
 
 
 
