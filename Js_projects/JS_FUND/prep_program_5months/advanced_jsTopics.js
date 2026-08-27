@@ -54,3 +54,19 @@ finally{
 
 console.log(`spinner animation turned off successfully: `, isLoading);
 
+// calculator dividing by zero 
+
+function calc(a, b){
+    if(b === 0) throw new Error(`cannot divide by zero!`);
+    else  return a/b ;
+}
+
+try{
+    calc(10, 0);
+
+}
+catch(error){
+    console.log(`error captured successfully: `, error.message);
+}
+
+// 
