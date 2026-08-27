@@ -537,6 +537,16 @@ const {money, car, role , live} = goalDream;
 
 console.log(role);
 
+// senior dev style destructuring
+
+function goalStatement({money, car}){
+  console.log(`i will make ${money} and drive ${car} at all costs`);
+
+};
+
+
+goalStatement(goalDream);
+
 
 
 
