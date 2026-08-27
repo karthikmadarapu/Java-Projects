@@ -604,3 +604,24 @@ const laptop = {
 laptop.printSpecs();
 
 
+
+// Fix the Broken code
+
+// ❌ BROKEN CODE TO FIX:
+const product = {
+    name: "Mechanical Keyboard",
+    price: 90,
+    displayPrice(){
+        return `The ${this.name} costs $${this.price}`;
+    }
+}
+
+// Modify the code above so this line prints the correct string:
+console.log(product.displayPrice()); 
+// Expected Output: "The Mechanical Keyboard costs $90"
+
+
+
+
+
+
