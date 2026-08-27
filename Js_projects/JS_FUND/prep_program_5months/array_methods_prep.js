@@ -372,3 +372,12 @@ const premiumShoppers = shoppers.filter((each) => {
 
 console.log(premiumShoppers);
 
+
+
+// reduce  methods quick practice 
+
+const numbers = [10, 2, 4, 7 ,9, 25];
+
+const sum = numbers.reduce((acc, eachNum) => acc + eachNum ,0);
+
+console.log(sum);
