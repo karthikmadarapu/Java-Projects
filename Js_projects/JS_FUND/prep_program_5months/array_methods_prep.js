@@ -490,6 +490,16 @@ const check = originalUsers === clonedUsers;
 
 console.log(clonedUsers , check);
 
+// ex 3 
+
+const baseProfile = { id: 101, username: "dev_dan", country: "USA" };
+const updates = { country: "Canada", status: "active" };
+
+const finalProfile = {...baseProfile, ...updates};
+
+console.log(finalProfile);
+
+
 
 
 
