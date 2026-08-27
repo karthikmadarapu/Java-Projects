@@ -37,5 +37,20 @@ let age;
  }
 
 
+//  Loading animation for the App 
  
+let isLoading = true;
+
+try{
+    throw new Error (`an unexpected error occured, server crashed!`);
+}
+catch(error){
+    console.log(`error caught gracefully: `, error.message);
+}
+
+finally{
+    isLoading = false;
+}
+
+console.log(`spinner animation turned off successfully: `, isLoading);
 
