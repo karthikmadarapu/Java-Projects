@@ -591,6 +591,16 @@ function connectServer({host, port}) {
 connectServer(config);
 
 
+// This keyword challenges 
 
+const laptop = {
+  brand: "Apple",
+    ram: "16GB",
+    printSpecs(){
+      console.log(`i have a laptop of ${this.brand} brand , consists of ${this.ram} ram`);
+    }
+}
+
+laptop.printSpecs();
 
 
