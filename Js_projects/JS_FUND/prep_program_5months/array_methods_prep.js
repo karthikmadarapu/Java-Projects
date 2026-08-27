@@ -433,5 +433,32 @@ const modifiedSizes = sizes.reduce((acc, eachItr, index) => {
 console.log(modifiedSizes);
 
 
+// E-COMM Platform Program 
+
+const userData = [
+  { id: 1, name: "Alice", status: "active", transactions: [150.00, 25.50] },
+  { id: 2, name: "Bob", status: "suspended", transactions: [400.00] },
+  { id: 3, name: "Charlie", status: "active", transactions: [10.99, 99.00, 5.50] },
+  { id: 4, name: "David", status: "inactive", transactions: [1000.00] },
+  { id: 5, name: "Eve", status: "active", transactions: [] }
+];
+
+
+const totalRevenueGenerator = userData
+
+.filter(eachUser => eachUser.status === "active") 
+
+.map(eachuser => {
+    return eachuser.transactions.reduce((sum, num) => sum + num, 0);
+})
+
+.reduce((grandTotal, userTotal) => grandTotal + userTotal, 0);
+
+console.log(totalRevenueGenerator);
+
+
+
+
+
 
 
