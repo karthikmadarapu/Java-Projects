@@ -69,4 +69,19 @@ catch(error){
     console.log(`error captured successfully: `, error.message);
 }
 
-// 
+//  The "Missing Database Value"
+
+let user = null;
+
+try{
+   
+    console.log(user.phone);
+    throw new Error(`user object null!`);
+}
+catch(error){
+
+    console.log(`successfully captured error!`, error.message);
+   user = {user: null};
+
+}
+
