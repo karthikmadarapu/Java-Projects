@@ -578,6 +578,19 @@ console.log(tier);
 console.log(username);
 
 
+// Modifying the function parameters 
+
+const config = { host: "localhost", port: 5432, secure: true };
+
+// FIX THIS FUNCTION PARAMETER:
+function connectServer({host, port}) {
+  // It should print using the destructured variables directly
+  console.log(`Connecting to ${host} on port ${port}`);
+}
+
+connectServer(config);
+
+
 
 
 
