@@ -481,6 +481,17 @@ console.log(masterPlaylist);
 
 
 
+// ex 2
+const originalUsers = ["Alice", "Bob", "Charlie"];
+
+const clonedUsers = [...originalUsers];
+
+const check = originalUsers === clonedUsers;
+
+console.log(clonedUsers , check);
+
+
+
 
 
 
