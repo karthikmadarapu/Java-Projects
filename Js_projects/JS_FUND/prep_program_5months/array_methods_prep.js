@@ -458,6 +458,21 @@ console.log(totalRevenueGenerator);
 
 
 
+// ADVANCED TOPICS JS INDUSTRY STANDARD
+
+
+// SPREAD OPERATOR 
+
+const  goodfruits = ["apple", "banana", "watermelon", "mango"];
+
+const okayishFruits = ["jackfruit"];
+
+const fruits = [...goodfruits , ...okayishFruits , "grapes" ];
+
+console.log(fruits);
+
+
+
 
 
 
