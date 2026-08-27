@@ -389,3 +389,36 @@ const cartTotal =  prices.reduce((acc, eachPrice) => acc + eachPrice, 0);
 
 console.log(cartTotal);
 
+
+// The "Salary Multiplier"
+
+const factors = [1, 2, 3, 4];
+
+const salaryMultiplier = factors.reduce((acc, eachNum) => acc * eachNum, 1);
+
+console.log(salaryMultiplier);
+
+// Inventory Valuator 
+
+const warehouse = [
+  { product: "Chair", price: 50, quantity: 4 },  // Value: 200
+  { product: "Table", price: 150, quantity: 2 }, // Value: 300
+  { product: "Lamp", price: 25, quantity: 10 }   // Value: 250
+];
+
+
+const valuation = warehouse.reduce((acc, eachVal) => {
+
+  const currentTotal = eachVal.price * eachVal.quantity;
+
+   const finalTotal =   acc + currentTotal;
+   
+  return finalTotal;
+
+
+}, 0);
+
+console.log(valuation);
+
+
+
