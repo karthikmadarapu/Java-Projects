@@ -529,6 +529,13 @@ console.log(finalAppstate);
 
 
 
+// object destructuring 
+
+const goalDream = {money: "10k/mo", car: "AMG", role: "CEO", live: "MIAMI"};
+
+const {money, car, role , live} = goalDream;
+
+console.log(role);
 
 
 
