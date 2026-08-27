@@ -507,6 +507,25 @@ const highScores = [450, 920, 120, 840];
 
 console.log(highestNum);
 
+// ex 5 
+const currentAppState = {
+  userId: 55,
+  preferences: {
+    theme: "light",
+    notifications: { email: true, push: false }
+  }
+};
+
+const finalAppstate = {
+  ...currentAppState,
+  preferences: {
+    ...currentAppState.preferences, 
+    theme: "dark"
+  }
+
+}
+
+console.log(finalAppstate);
 
 
 
