@@ -499,6 +499,15 @@ const finalProfile = {...baseProfile, ...updates};
 
 console.log(finalProfile);
 
+// ex 4
+
+const highScores = [450, 920, 120, 840];
+
+ const highestNum = Math.max(...highScores);
+
+console.log(highestNum);
+
+
 
 
 
