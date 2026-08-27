@@ -559,7 +559,23 @@ const {title, author} = book;
 console.log(title);
 console.log(author);
 
+// The "API Key Renamer"
 
+const session = { u_id: "usr_9982", status: "active" };
+const { u_id: userID, status} = session ;
+
+console.log( userID);
+console.log(status);
+
+// THE Missing Premium Tag
+
+const gamer = { username: "PixelKing", score: 4500 };
+
+const {username, tier = "standard"} = gamer;
+
+console.log(tier);
+
+console.log(username);
 
 
 
