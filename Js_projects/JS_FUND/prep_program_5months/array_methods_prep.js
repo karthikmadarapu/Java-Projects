@@ -419,6 +419,19 @@ const valuation = warehouse.reduce((acc, eachVal) => {
 }, 0);
 
 console.log(valuation);
+// T-shirt Picker
+const sizes = ["S", "M", "L", "XL"];
+
+const modifiedSizes = sizes.reduce((acc, eachItr, index) => {
+
+    if(index === 0 ) return eachItr;
+
+    return acc + "-" + eachItr;
+
+}, "");
+
+console.log(modifiedSizes);
+
 
 
 
