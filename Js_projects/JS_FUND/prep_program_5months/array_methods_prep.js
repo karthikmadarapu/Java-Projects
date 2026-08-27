@@ -230,9 +230,9 @@ console.log(ids_pluck);
 
 // Inflation Adjuster 
 
-const prices = [100, 250, 500, 1000];
+const price = [100, 250, 500, 1000];
 
-const inflatedPrices = prices.map(each => each * 1.1);
+const inflatedPrices = price.map(each => each * 1.1);
 
 console.log(inflatedPrices);
 
@@ -381,3 +381,11 @@ const numbers = [10, 2, 4, 7 ,9, 25];
 const sum = numbers.reduce((acc, eachNum) => acc + eachNum ,0);
 
 console.log(sum);
+
+// cart Totalizer 
+const prices = [12.99, 5.00, 45.00, 2.50];
+
+const cartTotal =  prices.reduce((acc, eachPrice) => acc + eachPrice, 0);
+
+console.log(cartTotal);
+
