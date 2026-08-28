@@ -127,4 +127,18 @@ try {
  }
 
 
- 
+//  Promise function 
+const burger_factory = new Promise((resolve, reject) => {
+const iskitchenStocked = false;
+
+if(iskitchenStocked) resolve("🍔 Here is your hot burger!");
+
+else reject ("ran out of ingredients");
+
+});
+
+
+burger_factory.then((food) => console.log("Success:", food));
+burger_factory.catch((error) => console.log("error shown: ", error));
+
+
