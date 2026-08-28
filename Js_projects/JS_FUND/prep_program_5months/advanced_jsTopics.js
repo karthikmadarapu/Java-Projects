@@ -22,7 +22,7 @@ let age;
  try {
   age = 18;
 
-  if(age <= 19) throw new Error(`your age must be 19+ to enter the CLUB`);
+  if(age < 19) throw new Error(`your age must be 19+ to enter the CLUB`);
 
 
 
@@ -84,4 +84,47 @@ catch(error){
    user = {user: null};
 
 }
+// try catch grind
 
+const invalidList = undefined;
+try {
+    console.log(invalidList.length);
+}
+catch(error){
+
+    console.log("message captured", error.message);
+}
+finally{
+    console.log("Validation check complete");
+}
+
+// try catch block for user profile
+const user_01 = { id: 101, profile: null };
+
+try{
+
+    console.log(user_01.profile.phone);
+}
+catch(err){
+    console.log("phone no. not provided", err.message);
+
+}
+
+// HTTP STATUS CODE PARSER
+
+function checkStatus(code){
+    if(code === 404) throw new Error ("Page not found");
+
+    else if(code === 505 ) throw new Error ("server error");
+    else  throw new Error("wrong number");
+}
+
+try {
+    checkStatus(1139);
+}
+ catch(error){
+    console.log(error.message);
+ }
+
+
+ 
