@@ -129,7 +129,7 @@ try {
 
 //  Promise function 
 const burger_factory = new Promise((resolve, reject) => {
-const iskitchenStocked = false;
+const iskitchenStocked = true;
 
 if(iskitchenStocked) resolve("🍔 Here is your hot burger!");
 
@@ -142,3 +142,13 @@ burger_factory.then((food) => console.log("Success:", food));
 burger_factory.catch((error) => console.log("error shown: ", error));
 
 
+// delaying message 
+
+const fetchUser = new Promise((resolve) => {
+  setTimeout(() => {
+     
+    resolve("welcome DEV!");
+  }, 2000);
+});
+
+fetchUser.then((success) =>console.log("success: ", success));
