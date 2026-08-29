@@ -152,3 +152,29 @@ const fetchUser = new Promise((resolve) => {
 });
 
 fetchUser.then((success) =>console.log("success: ", success));
+
+
+// try catch grind 
+
+function parseInteger(str){
+    
+    const convertTheNum = Number(str);
+
+    if(Number.isNaN(convertTheNum))  throw new Error( "wrong format num ");
+
+    return convertTheNum;
+
+}
+
+try{
+   const result =  parseInteger("45x");
+   console.log("successfully passed the function", result);
+    
+
+}
+catch(err){
+   console.log("Error caught gracefully:", err.message);
+}
+finally{
+    console.log("Validation execution complete.");
+}
