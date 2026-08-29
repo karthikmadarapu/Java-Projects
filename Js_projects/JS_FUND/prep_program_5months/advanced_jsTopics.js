@@ -178,3 +178,11 @@ catch(err){
 finally{
     console.log("Validation execution complete.");
 }
+
+// fetching user Image
+const fetchUserImg = new Promise((resolve) =>{
+     resolve("🖼️ Image Loaded");
+
+});
+
+fetchUserImg.then((success) => console.log("success : ",success));
