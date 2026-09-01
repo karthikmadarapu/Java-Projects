@@ -215,3 +215,18 @@ finally{
 
 console.log(`I'LL print no matter what!`);
 }
+// Query database question 
+const queryDatabase = new Promise((resolve, reject) => {
+    // 1. Roll a random number between 0 and 1
+    const coinFlip = Math.random() > 0.5;
+
+    if(coinFlip === true) resolve("📁 Records Found");
+    else reject(new Error("Database disconnected"));
+    // 2. Use your if/else logic here to resolve or reject the promise!
+});
+
+queryDatabase
+            .then((success) => console.log("success: ", success))
+            .catch((fail) => console.log("failure: ", fail.message));
+
+// 3. Consume the promise layout using your .then().catch().finally() loops!
