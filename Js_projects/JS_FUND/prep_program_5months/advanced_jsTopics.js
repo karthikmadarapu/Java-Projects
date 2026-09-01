@@ -186,3 +186,32 @@ const fetchUserImg = new Promise((resolve) =>{
 });
 
 fetchUserImg.then((success) => console.log("success : ",success));
+
+
+
+// Try catch practice speedrun 
+
+function printHi( age, name){   // only users who are 18 or up can print hi 
+    if(age < 18){
+      console.log(`HI ${name}!`);
+    }
+    else{
+        console.log(`sorry loser_jajaja!`);
+    }
+    return `DEFAULT!`
+}
+
+
+
+try{
+    printHi($$$$$);
+}
+catch(error){
+    console.log("error caught gracefully: ", error.message);
+
+}
+finally{
+
+
+console.log(`I'LL print no matter what!`);
+}
