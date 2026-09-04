@@ -636,3 +636,48 @@ boundingCar();
 
 
 
+const tasks = [
+  { id: 1, title: "Write API docs", category: "Work", completed: true },
+  { id: 2, title: "Gym session", category: "Health", completed: false },
+  { id: 3, title: "Review pull request", category: "Work", completed: false },
+  { id: 4, title: "Buy groceries", category: "Personal", completed: true },
+  { id: 5, title: "Fix login bug", category: "Work", completed: false },
+  { id: 6, title: "Prep weekly meals", category: "Health", completed: true },
+];
+
+const finalMetricsReport = tasks.reduce((report, task) =>{
+
+  const {completed, category, id} = task;   // destructure them for better readability
+
+  if(!report[category]){
+    report[category] = {
+       totalTasks: 0,
+       completedCount: 0,
+       completionRate: "0%",
+       pendingTasks: []
+      };
+  }
+
+  const currentCat = report[category];
+
+  currentCat.totalTasks += 1;
+
+  if(completed){
+    currentCat.completedCount += 1;
+  }
+  else{
+    currentCat.pendingTasks = [...currentCat.pendingTasks, id];
+  }
+
+  const percentageRate = (currentCat.completedCount / currentCat.totalTasks) * 100;
+  currentCat.completionRate = `${Math.round(percentageRate)}%`;
+  
+
+  
+
+
+  return report;
+
+}, {});
+
+console.log(JSON.stringify(finalMetricsReport, null, 2));
