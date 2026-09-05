@@ -232,3 +232,39 @@ queryDatabase
 // 3. Consume the promise layout using your .then().catch().finally() loops!
 
 
+
+
+// DataBase checker promise 
+
+const checkSubscription = new Promise((resolve, reject) => {
+
+    const dataBaseOnline  = true;
+    const isUser = true;
+ 
+
+    setTimeout(() =>{
+    if(!dataBaseOnline) {
+        reject("Database server is offline");
+
+    }
+    else if(isUser){
+        resolve({ user: "Karthik", status: "Premium" });
+    }
+    else{
+        reject("User is not a premium subscriber.");
+    }
+
+    },2000);
+});
+
+
+checkSubscription
+
+.then((success) => {
+
+    console.log(`success: welcome back ${success.user} is ${success.status}`);
+})
+
+.catch((fail) =>{
+        console.log(`⚠️ Error: ${error}`);
+});
