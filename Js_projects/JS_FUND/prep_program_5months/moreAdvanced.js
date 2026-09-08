@@ -56,4 +56,29 @@ async function login(userPassword){
 
 login("secret123");
 
+// task 3 loading + chaning awaits of userStats
+
+const fetchUserId = (username) => new Promise(res => setTimeout(() => res(101), 1000));
+const fetchUserStats = (userId) => new Promise(res => setTimeout(() => res(`Stats for ID ${userId}: 5 Orders`), 1000));
+
+
+async function loadDashboard(username){
+
+    try{
+        
+     console.log("function load");
+     const id = await fetchUserId(username);
+     const finalId = await fetchUserStats(id);
+
+     console.log(finalId);
+
+    }
+    catch(err){
+        console.log("err:", err.message || err);
+    }
+
+   
+}
+
+loadDashboard("user_1");
 

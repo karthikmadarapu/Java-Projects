@@ -88,6 +88,26 @@ function trappingWater(myArr){
 
 
  
+// finding the length of longest strictly increasing subsequence 
 
+const nums = [10, 9, 2, 5, 3, 7, 101, 18];
+
+function lengthOfSubsequece(arr){
+
+   const dp = new Array(arr.length).fill(1);
+
+   for(let i = 1; i < arr.length; i++){
+      for(let j = 0; j < i; j++){
+
+         if(arr[j] < arr[i]){
+         dp[i] = Math.max(dp[i], dp[j] + 1);
+         }
+      }
+   }
+
+   return Math.max(...dp);
+
+}
+console.log(lengthOfSubsequece(nums));
 
 
